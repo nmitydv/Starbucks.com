@@ -211,9 +211,11 @@ header{
 .home-text{
     flex: 1 1 17px;
     color: #fff;
+    width: 60%;
 }
 .home-img{
-    flex: 1 1 17px;
+    /* flex: 1 1 17px; */
+    width: 50%;
 }
 .home-img img{
     animation: animate 3s linear infinite;
@@ -461,9 +463,19 @@ header{
    .home-text h2{
     font-size: 1.2rem;
    }
-   @media (max-width: 560px) {
+   @media screen and (max-width: 560px) {
+    .home{
+        justify-content: center;
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+    .home-img{
+        width: 90%;
+    }
      .home-text{
         padding-top: inherit;
+        width: 100%;
      }
      .shop-container .box {
         margin-top: 6rem;
